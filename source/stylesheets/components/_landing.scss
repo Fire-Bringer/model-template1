@@ -14,7 +14,7 @@
 	left: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: space-between;
   background: url("/images/models/portrait8.webp") no-repeat 50% 50%;
 	background-size: cover;
 	padding: 20px;
@@ -41,7 +41,7 @@
 }
 
 .fa-brands {
-  color: #a77a3f;
+  color: #80593b;
 }
 
 .img-card {
@@ -67,7 +67,7 @@
 }
 
 .img-card:hover .img{
-  width: 150%;
+  width: 125%;
   filter: grayscale(0);
 }
 
@@ -86,7 +86,7 @@
   padding: 1rem 0;
   transition: 0.8s;
   backdrop-filter: blur(0px);
-  transform: translateY(50%);
+  transform: translateY(100%);
 }
 
 .img-card:hover .img-content {
@@ -95,7 +95,7 @@
 }
 
 .img-1 {
-	background: url("/images/models/portrait1.webp") no-repeat 50% 50%;
+	background: url("/images/models/model_1.webp") no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -105,12 +105,12 @@
 }
 
 .img-3 {
-	background: url("/images/models/portrait3.webp") no-repeat 50% 50%;
+	background: url("/images/models/model_2.webp") no-repeat 50% 50%;
 	background-size: cover;
 }
 
 .img-4 {
-	background: url("/images/models/portrait4.webp") no-repeat 50% 50%;
+	background: url("/images/models/model_3.webp") no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -125,18 +125,31 @@
 	position: relative;
   font-size: 5rem;
   font-weight: bold;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #5e422d;
+}
+
+.img-content h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.header p {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.6em;
+  width: 30%;
+  color: #e4dbcf;
 }
 
 .ml12 .letter {
 	display: inline-block;
 	line-height: 1em;
-}
-
-.link a {
-	color: red;
-	text-transform: uppercase;
-	font-size: 40px;
-	font-family: "Neutral Face";
 }
 
 @media (min-width: 900px) {

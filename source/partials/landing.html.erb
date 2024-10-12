@@ -1,13 +1,10 @@
 		<div class="landing-container">
 			<div class="left column">
 				<div class="header">
-					<p>Header</p>
 					<p>
-						"Dope quote"
+						"The sun doesn't ask permission to shine & neither do I"
 					</p>
-					<p>- Speaker</p>
 				</div>
-				<div class="link"><a href="#">For Hire</a></div>
 			</div>
 			<div class="right column">
         <div class="right-container">
@@ -16,25 +13,25 @@
               <div class="img-card">
                 <div class="img-1 img"></div>
                 <div class="img-content">
-                  <h2>Gallery Header</h2>
+                  <h2>Mood</h2>
                 </div>
               </div>
               <div class="img-card">
                 <div class="img-2 img"></div>
                 <div class="img-content">
-                  <h2>Gallery Header</h2>
+                  <h2>Natural</h2>
                 </div>
               </div>
               <div class="img-card">
                 <div class="img-3 img"></div>
                 <div class="img-content">
-                  <h2>Gallery Header</h2>
+                  <h2>Chillin</h2>
                 </div>
               </div>
               <div class="img-card">
                 <div class="img-4 img"></div>
                 <div class="img-content">
-                  <h2>Gallery Header</h2>
+                  <h2>Outdoors</h2>
                 </div>
               </div>
             </div>
@@ -81,6 +78,15 @@
 				ease: Expo.easeInOut,
 				delay: 3.4,
 			});
+
+      // Animate the p text within the .left column's .header class
+      TweenMax.from(".left .header p", 3, {
+        y: "60",
+        opacity: 0,
+        ease: Power2.easeOut,
+        delay: 8, // Adjust timing to sync with other animations
+      });
+
 			TweenMax.staggerFrom(
 				".images > div",
 				1,
@@ -93,23 +99,16 @@
 				0.2
 			);
 
-			TweenMax.staggerFrom(
-				".header > p",
-				1,
-				{
-					y: "60",
-					opacity: 0,
-					ease: Power2.easeOut,
-					delay: 5.6,
-				},
-				0.2
-			);
-
-			TweenMax.from(".link", 1, {
-				opacity: 0,
-				ease: SteppedEase.config(1),
-				repeat: -1,
-				repeatDelay: 0.2,
-				delay: 7.8,
-			});
+      // Add animation for .right-social items
+      TweenMax.staggerFrom(
+        ".right-social a",
+        1.5,
+        {
+          opacity: 0,
+          y: 20,
+          ease: Expo.easeInOut,
+          delay: 7, // Adjust timing to sync with the intro animation
+        },
+        0.2
+      );
 		</script>
